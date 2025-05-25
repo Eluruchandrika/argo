@@ -12,13 +12,10 @@ import {
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
-// Assuming your Flask backend is running on http://localhost:5000
 const API_BASE_URL = "http://127.0.0.1:5000";
 
-// **IMPORTANT: Replace with your actual OpenWeatherMap API Key**
-const OPENWEATHER_API_KEY = process.env.OPENWEATHER_API_KEY;
-
-const UNSPLASH_ACCESS_KEY = process.env.UNSPLASH_ACCESS_KEY;
+const UNSPLASH_ACCESS_KEY = import.meta.env.VITE_UNSPLASH_ACCESS_KEY;
+const OPENWEATHER_API_KEY = import.meta.env.VITE_OPENWEATHER_API_KEY;
 
 const soilTypes = ["Sandy", "Loamy", "Clay", "Silty", "Peaty", "Chalky"];
 const idealValues = {
@@ -31,7 +28,6 @@ const idealValues = {
   rainfall: 100,
 };
 
-// *** MODIFIED: Function to fetch real weather based on lat/lon ***
 const fetchWeather = async (lat, lon) => {
   try {
     const response = await fetch(
@@ -105,10 +101,7 @@ const fetchPredictions = async (inputs) => {
     const data = await response.json();
     const top3Crops = data.top_3_crops;
 
-    // Structure the data to match your frontend's expected format
-    // You'll need to define expectedYield, price, reasons, npk, suitability
-    // based on your model's capabilities or dummy data for now.
-    // For demonstration, let's create some mock detailed data for the predicted crops.
+    
     const mockDetailedCropData = (cropName, index) => {
       // This is mock data, in a real app, your backend might return this too.
       const baseSuitability = 90 - (index * 10); // Decreasing suitability
@@ -240,7 +233,6 @@ const CropPrediction = () => {
     const file = e.target.files[0];
     if (file) {
       setSoilTestFile(file.name);
-      // In a real application, you'd integrate an AI/OCR service here
       // to parse the file and autofill nutrient fields (N, P, K, pH).
     }
   };
