@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap
+import "bootstrap/dist/css/bootstrap.min.css"; 
 
 const Signup = () => {
     const [email, setEmail] = useState("");
@@ -60,7 +60,6 @@ const Signup = () => {
                     <button type="submit" className="btn btn-success w-100">Sign Up</button>
                 </form>
 
-                {/* Login Link */}
                 <p className="text-center mt-3">
                     Already have an account?{" "}
                     <button className="btn btn-link p-0" onClick={() => navigate("/login")}>

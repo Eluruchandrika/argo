@@ -40,3 +40,18 @@ server/node_modules/
 *.pyo
 
 .DS_Store
+
+
+# Node (React client)
+client/node_modules/
+client/.env
+
+# Python (Flask server)
+server/__pycache__/
+server/venv/
+server/.env
+
+# General
+*.log
+.DS_Store
+.env

@@ -1,16 +1,14 @@
-/* Navbar Height & Basic Styles */
 .custom-navbar {
-    height: 150px; /* Fixed height */
-    background: linear-gradient(135deg, #28a745, #218838); /* Green gradient */
+    height: 150px;
+    background: linear-gradient(135deg, #28a745, #218838);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     display: flex;
     align-items: center;
 }
 
-/* Logo Image Styling */
 .logo-img {
-    height: 10px; /* Adjust size as needed */
+    height: 10px;
     width: 10px;
     border-radius: 50%;
     object-fit: contain;
@@ -21,7 +19,6 @@
     transform: scale(1.1);
 }
 
-/* Navigation Links */
 .nav-links .nav-link {
     font-size: 1.2rem;
     color: white !important;
@@ -30,11 +27,10 @@
 }
 
 .nav-links .nav-link:hover {
-    color: #ffeb3b !important; /* Yellow hover effect */
+    color: #ffeb3b !important; 
     text-decoration: underline;
 }
 
-/* Profile Dropdown */
 .profile-dropdown .dropdown-toggle {
     font-size: 1.2rem;
     color: white !important;
@@ -42,13 +38,37 @@
     background: none;
 }
 
-/* Logout Button */
 .logout-btn {
     width: 100%;
     font-size: 1rem;
 }
 
-/* Mobile Responsive */
+
+.btn-3d {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(145deg, #1e90ff, #0073e6);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    box-shadow: 0 6px 0 #005bb5, 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+  }
+  
+  .btn-3d:active {
+    box-shadow: 0 2px 0 #005bb5, 0 4px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(4px);
+  }
+  
+  .btn-3d:hover {
+    background: linear-gradient(145deg, #0073e6, #1e90ff);
+  }
+  
+
 @media (max-width: 768px) {
     .custom-navbar {
         height: auto;

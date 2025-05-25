@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap
+import "bootstrap/dist/css/bootstrap.min.css"; 
 
 const Login = ({ setAuth }) => {
     const [email, setEmail] = useState("");
@@ -24,11 +24,10 @@ const Login = ({ setAuth }) => {
                 console.log("🔹 Received Token:", data.token);
     
                 localStorage.setItem("token", data.token);
-                console.log("✅ Token Saved in localStorage:", localStorage.getItem("token"));
+                console.log("Token Saved in localStorage:", localStorage.getItem("token"));
     
                 setAuth(true);
     
-                // 🛑 Add a delay before navigating
                 setTimeout(() => {
                     navigate("/");
                 }, 500);
@@ -71,7 +70,6 @@ const Login = ({ setAuth }) => {
                     <button type="submit" className="btn btn-primary w-100 mb-4">Login</button>
                 </form>
 
-                {/* Signup Button */}
 
                 <p className="text-center mt-3">
                 Don't have account ?{" "}

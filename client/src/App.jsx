@@ -7,6 +7,8 @@ import Dashboard from "./pages/Dashboard";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home";
 import Predict from "./pages/Predict";
+import CommunityPage from "./pages/community";
+import Contact from "./pages/contact";
 
 
 const App = () => {
@@ -26,6 +28,8 @@ const App = () => {
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/dashboard" element={<Dashboard auth={auth} />} />
                 <Route path="/predict" element={<Predict />} />
+                <Route path="/community" element={<CommunityPage />} />
+                <Route path="/contact" element={<Contact />} />
 
             </Routes>
         </Router>
