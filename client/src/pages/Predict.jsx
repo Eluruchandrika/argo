@@ -562,7 +562,7 @@ const CropPrediction = () => {
               <thead>
                 <tr className="bg-green-100">
                   <th className="border border-gray-300 p-2">Date</th>
-                  <th className="border border-gray-300 p-2">Soil Type</th> {/* Cannot get from backend yet */}
+                  <th className="border border-gray-300 p-2">Soil Type</th> 
                   <th className="border border-gray-300 p-2">Top Crop</th>
                   <th className="border border-gray-300 p-2">All Predicted Crops</th>
                   <th className="border border-gray-300 p-2">Actions</th>
