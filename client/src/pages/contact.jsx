@@ -103,18 +103,18 @@ export default function ContactPage() {
           <ul style={{ listStyle: "none", padding: 0, marginTop: 20, lineHeight: 1.8 }}>
             <li style={{ display: "flex", alignItems: "center", gap: 12 }}>
               <MapPin size={20} />
-              <span>1234 Green Street, Springfield, USA</span>
+              <span>Ananthapur , India</span>
             </li>
             <li style={{ display: "flex", alignItems: "center", gap: 12 }}>
               <Phone size={20} />
               <a href="tel:+1234567890" style={{ color: "#0077cc", textDecoration: "none" }}>
-                +1 (234) 567-890
+                +91 7032525222
               </a>
             </li>
             <li style={{ display: "flex", alignItems: "center", gap: 12 }}>
               <Mail size={20} />
               <a href="mailto:support@yourdomain.com" style={{ color: "#0077cc", textDecoration: "none" }}>
-                support@yourdomain.com
+                eluruchandrika12@gmail.com
               </a>
             </li>
           </ul>
@@ -141,7 +141,7 @@ export default function ContactPage() {
                 <Facebook size={28} />
               </a>
               <a
-                href="https://linkedin.com/in/yourprofile"
+                href="https://www.linkedin.com/in/chandrika-eluru/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -150,7 +150,7 @@ export default function ContactPage() {
                 <Linkedin size={28} />
               </a>
               <a
-                href="https://instagram.com/yourprofile"
+                href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
