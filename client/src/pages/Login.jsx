@@ -72,7 +72,7 @@ const Login = ({ setAuth }) => {
 
 
                 <p className="text-center mt-3">
-                Don't have account ?{" "}
+                Do not have account ?{" "}
                     <button className="btn btn-link p-0" onClick={() => navigate("/signup")}>
                     Sign Up
                     </button>

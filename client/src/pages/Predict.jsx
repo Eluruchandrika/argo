@@ -1,4 +1,4 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Lottie from "lottie-react";
 import loadingAnimation from "../assets/loading.json"; // your loading Lottie JSON here
 import {
@@ -12,7 +12,7 @@ import {
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
-const API_BASE_URL = "http://127.0.0.1:5000";
+const API_BASE_URL = "https://argo-flask-backend.onrender.com"; // Updated URL
 
 const UNSPLASH_ACCESS_KEY = import.meta.env.VITE_UNSPLASH_ACCESS_KEY;
 const OPENWEATHER_API_KEY = import.meta.env.VITE_OPENWEATHER_API_KEY;
@@ -340,7 +340,7 @@ const CropPrediction = () => {
             parameter: param,
             actual: predictions[selectedCropIndex]?.npk[param] || 0,
             ideal: idealValues[param],
-        }))
+          }))
       : [];
 
   return (
