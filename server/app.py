@@ -13,7 +13,6 @@ app = Flask(__name__)
 # Configure CORS to allow requests ONLY from your frontend's Render URL
 # IMPORTANT: Replace 'https://argo-react-frontend.onrender.com' with your actual frontend URL
 CORS(app, origins="https://argo-react-frontend.onrender.com", methods=["GET", "POST", "DELETE", "PUT"])
-
 # Database configuration
 # Using a relative path for SQLite database
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///predictions.db"

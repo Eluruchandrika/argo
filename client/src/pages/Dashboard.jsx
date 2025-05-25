@@ -49,7 +49,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchHistory = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:5000/history");
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/history`);
         const data = await response.json();
         const sortedData = data.sort((a, b) => a.id - b.id);
         setHistory(sortedData);
