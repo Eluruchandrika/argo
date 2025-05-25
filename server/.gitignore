@@ -21,7 +21,7 @@ venv/
 *.swp
 
 # Machine Learning Model Files
-*.pkl
+
 *.h5
 *.pt
 *.ckpt
