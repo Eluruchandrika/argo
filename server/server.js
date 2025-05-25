@@ -6,7 +6,16 @@ const authRoutes = require("./routes/authRoutes");
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+const allowedOrigins = [
+  "http://localhost:5173", // or 3000 if using CRA
+  "https://argo-react-frontend.onrender.com"
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true
+}));
+
 
 mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log("MongoDB Connected"))
